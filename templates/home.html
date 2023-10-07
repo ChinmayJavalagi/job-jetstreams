@@ -22,9 +22,11 @@
     
     Our mission is simple: to connect talented individuals like you with their dream careers. Whether you're a recent graduate, an experienced professional, or someone looking for a career change, Job Jetstreams has a flight plan tailored just for you.</p>
             <h2 class = "text-center mt-2 mb-4">Open Positions</h2>
-            <p> 
-                TODO - Show the jobs here
-            </p>
+            <div> 
+                {% for job in jobs %}
+                    {% include "jobitem.html" %}
+                {% endfor %}
+            </div>
             <div class = "text-center">
             <button class="btn btn-primary"> Contact Us </button>
                 <p class = "text-center mt-4">Copyright 2023, Job JetStreams</p>
