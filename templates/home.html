@@ -19,9 +19,16 @@
             <h1 class = "text-center mt-2 mb-4">Job JetStreams</h1>
             <img class = "img-fluid" id = "banner" src = "static/banner.jpg" height = "320" >
             <h2 class = "text-center mt-2 mb-4">About Us</h2>
+            <div class = "row" style = "margin-bottom: 16px">
+                <div class = "col-md-6">
             <p class = "lead">Welcome to Job Jetstreams, your gateway to exciting career opportunities that will propel you to new heights. At Job Jetstreams, we understand that finding the perfect job can be a journey filled with turbulence. That's why we're here to be your co-pilot, guiding you smoothly through the ever-changing job market.
     
     Our mission is simple: to connect talented individuals like you with their dream careers. Whether you're a recent graduate, an experienced professional, or someone looking for a career change, Job Jetstreams has a flight plan tailored just for you.</p>
+                </div>
+                <div class = " d-none d-md-block col-md-6">
+                    <img src = "static/people.jpg" style = "height:320px; border-radius:4px;">
+                </div>
+            </div>
             <h2 class = "text-center mt-2 mb-4">Open Positions</h2>
             <div> 
                 {% for job in jobs %}
@@ -29,7 +36,7 @@
                 {% endfor %}
             </div>
             <div class = "text-center">
-            <button class="btn btn-primary"> Contact Us </button>
+            <a href = "mailto:hello@jobjetstreams.com?subject=Question%20about%20job%20openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20question%3A%20%3Cyour%20question%20here%3E"class="btn btn-primary"> Contact Us </a>
             </div>
         </div>
         {% include 'footer.html' %}
